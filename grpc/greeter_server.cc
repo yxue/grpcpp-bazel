@@ -1,4 +1,7 @@
 #include <grpcpp/grpcpp.h>
+
+#include <string>
+
 #include "grpc/helloworld.grpc.pb.h"
 
 using grpc::Server;

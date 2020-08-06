@@ -1,12 +1,9 @@
 syntax = "proto3";
 
-option java_package = "com.grpc";
-
 package helloworld;
 
 service Greeter {
-  rpc SayHello(HelloRequest) returns (HelloResponse) {
-  }
+  rpc SayHello(HelloRequest) returns (HelloResponse) {}
 }
 
 message HelloRequest {

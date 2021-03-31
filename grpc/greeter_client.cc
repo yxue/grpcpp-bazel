@@ -47,8 +47,8 @@ class GreeterClient {
 };
 
 int main() {
-  GreeterClient greeter(
-      grpc::CreateChannel("xxxxxxxx:80", grpc::InsecureChannelCredentials()));
+  GreeterClient greeter(grpc::CreateChannel(
+      "localhost:50051", grpc::InsecureChannelCredentials()));
   std::string user("world");
   if (absl::GetFlag(FLAGS_streaming)) {
     std::cout << "Streaming ...\n";
